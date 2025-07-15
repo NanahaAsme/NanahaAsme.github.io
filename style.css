@@ -288,6 +288,9 @@ a:hover{
         bottom: 150px;
         left: 20px;
     }
+    footer a {
+        color: var(--text-white);
+    }
     .footer_inline_content {
         width: 100%;
         margin: 80px 0;
