@@ -1,0 +1,32 @@
+#c1 {
+    background: url(/img/formdoor2.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+#c1:hover{
+    background-size: auto 110%;
+}
+#c2 {
+    background: url(img/tekitou.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+#c2:hover{
+    background-size: auto 110%;   
+}
+#c3 {
+    background: url(img/tekitou.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+#c3:hover{
+    background-size: auto 110%;   
+}
+#c4 {
+    background: url(img/tekitou.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+#c4:hover{
+    background-size: auto 110%;   
+}
