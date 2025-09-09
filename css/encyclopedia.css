@@ -4,50 +4,65 @@
     background-color: bisque;
     padding-left:20px;
     padding-right:20px;
-    max-width: 1290px;/*これで幅制限を掛ける*/
+
 }
 .float_area{
     background-color: lightsalmon;
 }
-.float_area::after{
-    display: block;
-    content: '';
-    clear:both;
-}
+
 .float__image{
     background-color: red;
-    float: left;
-    width: 50%;
 }
 .float__body{
     background-color: pink;
-    padding-left:20px;
-    overflow: hidden;
 }
 .float__body .header-section-low{
     background-color: blue;
-    position:relative;
-    padding:1px 0 1px 24px;
-    margin-top:50px;
-    
 }
-.header-section-low::before{
-    display:block;
-content:'';
-position:absolute;
-top:0;
-left:0;
-width:4px;
-height:38px;
-background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#338edc),color-stop(33%,#16a0d7),color-stop(66%,#02afb5),to(#3eb164));
-background:linear-gradient(to bottom,#338edc 0,#16a0d7 33%,#02afb5 66%,#3eb164 100%)
-}
+
 .float__body .header-section-low__title{
     background-color: cyan;
 }
 
-
 img{
 max-width:100%;
 height:auto;
+}
+
+
+.float_area {
+  display: flex;
+  flex-wrap: wrap; /* 狭いときは折り返し */
+  gap: 1rem; /* 画像と本文の間隔 */
+  align-items: flex-start; /* 上揃え */
+}
+
+.float__image {
+  flex: 0 0 600px; /* 幅200px固定 */
+}
+.float__image img {
+  
+  width: auto; /* 枠に収まるように */
+  height: 100%; /* 比率維持 */
+}
+
+.float__body {
+    width: 100%;
+    flex: 1; /* 本文は残り幅いっぱい */
+}
+
+/* 幅が狭いときは縦並び */
+@media (max-width: 950px) {
+  .float_area {
+    flex-direction: column;
+  }
+
+  .float__image {
+    text-align: center;
+    flex: none; /* 縦並び時は制約を解除 */
+    height: 250px; /* 画像サイズは維持 */
+    width: 100%;
+
+    margin: 0 auto; /* 中央寄せ */
+  }
 }
