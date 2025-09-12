@@ -274,9 +274,8 @@ a:hover{
     footer {
         background-color: var(--corp-color);
         width: 100%;
+        min-width: 820px;
         height: 500px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
         position: relative;
         color: var(--corp-white);
         box-shadow: 0 0 10px 10px var(--background-shadow);
