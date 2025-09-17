@@ -6,13 +6,14 @@
 }
 .section{
     /*background-color: bisque;*/
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     padding: 0 10px;
 }
 
 .header-section__title{
     background-color: var(--corp-color);
+
     color: var(--text-white);
     position: relative;
     padding: 30px 0;
@@ -50,13 +51,14 @@
 /*小さいタイトルの装飾（縦棒）*/
 .header-section-low__title:before {
     background-color: var(--corp-color);
+    background-image: linear-gradient(to top, var(--corp-color) 40%, var(--corp-color-light) 100%);
     content:"";
     position: absolute;
     left: 0;
     transform:  translateX(-100%);
     bottom: 10px;
     display: inline-block;
-    width: 4px;
+    width: 5px;
     height: 40px;
     border-radius: 5px;
 }
@@ -82,7 +84,7 @@ height:auto;
 }
 
 .float__image {
-  flex: 0 0 500px; /* 幅200px固定 */
+  flex: 0 0 550px;
 }
 @media (max-width: 950px) {
   .float__image {
@@ -107,6 +109,7 @@ height:auto;
 }
 .float__body p{
   margin: 0;
+  line-height: 1.8;
 }
 
 

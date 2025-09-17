@@ -5,9 +5,10 @@
     --background: white;
     --background-shadow: #b0b0b0;
     --section-background-shadow: #d0d0d0;
-    --text: #000000;
+    --text: #0a0a0a;
     --text-white: #fafafa;
-    --corp-color: rgb(10, 90, 140);
+    --corp-color: rgb(28, 97, 141);
+    --corp-color-light: rgb(27, 199, 243);
     --corp-white: #fafafa;
     --dark-gray: #111111;
     --gray: gray;
