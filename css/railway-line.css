@@ -59,11 +59,13 @@
     width: 10px;
 }
 
-.sta-list__item:first-child .sta-list__line li {
+.sta-list__item:first-child .sta-list__line li,
+.sta-list__line li.start {
     top: 50%;
 }
 
-.sta-list__item:first-child .sta-list__line li.stop span {
+.sta-list__item:first-child .sta-list__line li.stop span,
+.sta-list__line li.stop.start span {
     top: -7px;
 }
 
