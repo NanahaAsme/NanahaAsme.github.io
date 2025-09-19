@@ -1,0 +1,126 @@
+@charset "UTF-8";
+:root {
+    --loc: #aaa;
+    --semiexp: #1b5;
+    --exp: #e22;
+    --ltdexp: #ea1;
+}
+
+.sta-list_area .sta-list__item {
+    display: flex; 
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 500;
+}
+
+.sta-list__item .sta-list__name {
+    background-color: #f0f0f0;
+    color: var(--text);
+    padding: 20px;
+    margin: 5px 0;
+    width: 100%;
+    font-size: 23px;
+    border-radius: 10px;
+    border-bottom: 1px solid var(--light-gray);
+    box-shadow: 0 0 10px 1px var(--background-shadow);
+    text-decoration: none;
+}
+.sta-list__item .sta-list__name:hover {
+    background-color: var(--light-gray);
+    opacity: 0.5;
+    transition: opacity 0.1s linear;
+}
+.sta-list__item .sta-list__name__en {
+    color: var(--gray);
+    font-size: 18px;
+    bottom: 0;
+    margin: auto 0;
+}
+
+
+
+.sta-list__line {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+
+}
+
+.sta-list__line ul {
+    background-color: cadetblue;
+
+}
+
+.sta-list__line li {
+    background-color: #000;
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    width: 10px;
+}
+
+.sta-list__item:first-child .sta-list__line li {
+    top: 50%;
+}
+
+.sta-list__item:first-child .sta-list__line li.stop span {
+    top: -7px;
+}
+
+.sta-list__item:last-child .sta-list__line li {
+    bottom: 50%;
+}
+
+.sta-list__item:last-child .sta-list__line li.stop span {
+    top: calc(50% + 12px);
+}
+
+.sta-list__line li.stop span {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 4px solid #000;
+    top: 40%;
+    bottom: 0;
+    left: -4px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.sta-list__line li.loc {
+    right: 10%;
+    background-color: var(--loc)
+}
+
+.sta-list__item li.loc span {
+    border-color: var(--loc)
+}
+
+.sta-list__line li.semiexp {
+    right: 35%;
+    background-color: var(--semiexp)
+}
+
+.sta-list__line li.semiexp span {
+    border-color: var(--semiexp)
+}
+
+.sta-list__line li.exp {
+    right: 60%;
+    background-color: var(--exp)
+}
+
+.sta-list__line li.exp span {
+    border-color: var(--exp)
+}
+
+.sta-list__line li.ltdexp {
+    right: 85%;
+    background-color: var(--ltdexp)
+}
+
+.sta-list__line li.ltdexp span {
+    border-color: var(--ltdexp)
+}
