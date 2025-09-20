@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 :root {
     --loc: #aaa;
     --comsemiexp: #17b;
@@ -8,47 +9,70 @@
     --liner: #1ae;
     --ltdexp: #e11;
 }
-.train-type_area{
-    margin:10px 0;
+
+.train-type_area {
+    margin: 10px 0;
     font-family: "Zen Kaku Gothic New", sans-serif;
     background-color: #f0f0f0;
-    padding:15px;
+    padding: 15px;
     border-radius: 15px;
     display: flex;
     box-shadow: 0 0 10px 1px var(--background-shadow);
 }
-.train-type__types{
+
+@media (max-width: 800px) {
+    .train-type_area {
+        flex-direction: column;
+    }
+}
+
+.train-type__types {
     margin: auto;
 }
-.train-type__types ul{
+
+.train-type__types ul {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 10px;
+    row-gap: 10px;
     justify-content: center;
 }
-.train-type__types li{
+
+@media (max-width: 750px) {
+    .train-type__types ul {
+        width: 400px;
+    }
+}
+
+.train-type__types li {
     padding: 0 10px;
     width: 80px;
     border-radius: 5px;
-    text-align-last:center;
+    text-align-last: center;
     color: var(--text-white);
     font-weight: 500;
 }
 
-.train-type__types .local{
+.train-type__types .local {
     background-color: var(--loc);
 }
-.train-type__types .comsemiexp{
+
+.train-type__types .comsemiexp {
     background-color: var(--comsemiexp);
 }
-.train-type__types .semiexp{
+
+.train-type__types .semiexp {
     background-color: var(--semiexp);
 }
-.train-type__types .exp{
+
+.train-type__types .exp {
     background-color: var(--exp);
 }
-.train-type__types .ltdexp{
+
+.train-type__types .ltdexp {
     background-color: var(--ltdexp);
 }
-.train-type__types .pass{
+
+.train-type__types .pass {
     background-color: var(--light-gray);
 }
