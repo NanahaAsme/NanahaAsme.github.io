@@ -8,8 +8,10 @@
     --text: #0a0a0a;
     --text-white: #fafafa;
     --corp-color: rgb(28, 97, 141);
+    --corp-color-chuso: rgb(47, 200, 177);
     --corp-color-dark: rgb(20, 90, 131);
     --corp-color-light: rgb(27, 199, 243);
+    --horuto-line: #ea1;
     --corp-white: #fafafa;
     --dark-gray: #111111;
     --gray: gray;
@@ -392,6 +394,7 @@ a:hover{
         height: 60px;
         top: 5px;
         right: 10px;
+        border-radius: 50%;
         display:flex;
         cursor: pointer;
         justify-content: center;

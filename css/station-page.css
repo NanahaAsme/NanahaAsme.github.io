@@ -1,0 +1,157 @@
+@charset "UTF-8";
+.station-main-header_area {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    position: relative;
+    margin: 10px;
+    height: 500px;
+}
+
+.station-main-header__inner {
+    max-width: 1000px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    margin: auto;
+
+}
+
+.station-main-header_area img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 10px var(--background-shadow);
+}
+
+.station-main-header_area .station-main-header__name {
+    font-weight: 600;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 25px;
+    color: var(--text);
+    position: relative;
+    box-shadow: 0 0 10px 1px #555
+}
+
+.station-main-header_area .station-main-header__name:before {
+    content: "";
+    position: absolute;
+    left: calc(50%);
+    transform: translateX(-50%);
+    bottom: 25px;
+    display: inline-block;
+    width: 50%;
+    height: 8px;
+    background-color: var(--corp-color);
+    border-radius: 5px;
+}
+
+.station-main-header_area .station-main-header__name span {
+    text-align: center;
+}
+
+.station-main-header_area .station-main-header__name .station-main-header__hira {
+    letter-spacing: 3px;
+}
+
+.station-main-header_area .station-main-header__name .station-main-header__kanji {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.station-main-header_area .station-main-header__name .station-main-header__en {}
+
+.station-main-header__lines ul {
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    height:20px;
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--corp-white);
+    font-weight: 600;
+}
+
+.station-main-header__lines .station-main-header__line__soyaexp ul {
+    background-color: var(--corp-color);
+    box-shadow: 0 0 10px 1px #555
+}
+
+.station-main-header__lines .station-main-header__line__chuso ul {
+    background-color: var(--corp-color-chuso);
+    box-shadow: 0 0 10px 1px #555
+}
+.station-main-header__lines .station-main-header__line__horuto ul {
+    background-color: var(--horuto-line);
+    box-shadow: 0 0 10px 1px #555
+}
+
+.station-main-header__lines li {
+    margin: 0 auto;
+    
+}
+.station-main-header__lines li a{
+    color: var(--corp-white);
+} 
+
+
+.station-main-header__lines li.station-main-header__nextsta:before,
+.station-main-header__lines li.station-main-header__nextsta:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 13px;
+    border-radius: 3px;
+    background-color: var(--corp-white);
+    position: absolute;
+}
+
+.station-main-header__lines li.station-main-header__nextsta.left:before {
+    left: -30px;
+    top: calc(50% - 5px);
+    transform: rotate(-45deg);
+}
+
+.station-main-header__lines li.station-main-header__nextsta.left:after {
+    left: -30px;
+    bottom: calc(50% - 5px);
+    transform: rotate(45deg);
+}
+.station-main-header__lines li.station-main-header__nextsta.right:before {
+    right: -30px;
+    top: calc(50% - 5px);
+    transform: rotate(45deg);
+}
+
+.station-main-header__lines li.station-main-header__nextsta.right:after {
+    right: -30px;
+    bottom: calc(50% - 5px);
+    transform: rotate(-45deg);
+}
+
+.station-main-header__lines li.station-main-header__nextsta{
+    font-size: 15px;
+}
+.station-main-header__lines li.station-main-header__nextsta.left {
+    left: 40px;
+    position: absolute;    
+}
+.station-main-header__lines li.station-main-header__nextsta.right {
+    right: 40px;
+    position: absolute;
+}
+.station-main-header__lines li.station-main-header__linename{
+    font-weight: 600;
+}
+
+/*上が長すぎる~~~*/
+
