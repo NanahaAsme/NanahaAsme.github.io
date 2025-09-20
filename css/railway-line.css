@@ -9,7 +9,9 @@
     --ltdexp: #e11;
 }
 /*上のは後で消す*/
-
+.sta-list_area{
+    margin-top: 30px
+}
 .sta-list_area .sta-list__item {
     display: flex; 
     font-family: "Zen Kaku Gothic New", sans-serif;
@@ -46,7 +48,7 @@
     position: relative;
     top: 0;
     bottom: 0;
-    width: 210px;
+    width: 120px;
 
 }
 
@@ -107,7 +109,7 @@
 }
 
 .sta-list__line li.comsemiexp {
-    right: 20%;
+    right: 30%;
     background-color: var(--comsemiexp)
 }
 
@@ -116,7 +118,7 @@
 }
 
 .sta-list__line li.semiexp {
-    right: 30%;
+    right: 50%;
     background-color: var(--semiexp)
 }
 
@@ -124,35 +126,17 @@
     border-color: var(--semiexp)
 }
 
-.sta-list__line li.comexp {
-    right: 40%;
-    background-color: var(--comexp)
-}
-
-.sta-list__line li.comexp span {
-    border-color: var(--comexp)
-}
 
 .sta-list__line li.exp {
-    right: 50%;
+    right: 70%;
     background-color: var(--exp)
 }
 
 .sta-list__line li.exp span {
     border-color: var(--exp)
 }
-
-.sta-list__line li.liner {
-    right: 60%;
-    background-color: var(--liner)
-}
-
-.sta-list__line li.liner span {
-    border-color: var(--liner)
-}
-
 .sta-list__line li.ltdexp {
-    right: 70%;
+    right: 90%;
     background-color: var(--ltdexp)
 }
 
