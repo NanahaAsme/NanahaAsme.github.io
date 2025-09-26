@@ -76,3 +76,6 @@
 .train-type__types .pass {
     background-color: var(--light-gray);
 }
+.train-type__types .chuso {
+    background-color: var(--corp-color-chuso);
+}

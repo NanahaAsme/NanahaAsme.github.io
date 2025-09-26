@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+a.link-button {
+    position: relative;
+    background-color: #f0f0f0;
+    color: var(--text);
+    font-weight: bold;
+    padding:10px 50px;
+    border-radius: 36px;
+    border: var(--corp-color) solid 3px;
+    /*box-shadow: 0 0 10px 1px #555*/
+    text-decoration: none;
+}
+
+.link-button-icon{
+    width: 18px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right: 15px;
+    margin: auto;
+}
+a.link-button:hover{
+    background-color: var(--corp-color);
+    transition: background-color 0.1s linear;
+}
+
+.float_area__center{
+    display: flex;
+    justify-content: center;
+    margin:30px;
+    column-gap: 30px;
+    row-gap: 30px;
+}
