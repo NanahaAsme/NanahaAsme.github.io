@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.stndrd-tbl {
+    width:400px;
+    margin: 10px 10px;
+    padding: 1px;
+    /*border: 1px solid gray;*/
+    box-shadow: 0 0 10px 1px var(--background-shadow);
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+.stndrd-tbl img {
+    width:20vw;
+    object-fit: cover;
+}
+.stndrd-tbl th {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+}
+.stndrd-tbl th, .stndrd-tbl td{
+    padding:10px;
+    width:100px;
+    padding: auto 10px;
+}
+.stndrd-tbl .ta-c {
+    text-align: center;
+}
+.stndrd-tbl .ta-l {
+    text-align: left;
+}
+/*
+table tr:nth-child(odd) {
+    background-color: #e0e0e0;
+}:?
