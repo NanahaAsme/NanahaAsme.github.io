@@ -65,6 +65,10 @@
     background-color: var(--semiexp);
 }
 
+.train-type__types .comexp {
+    background-color: var(--comexp);
+}
+
 .train-type__types .exp {
     background-color: var(--exp);
 }

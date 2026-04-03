@@ -48,7 +48,7 @@
     position: relative;
     top: 0;
     bottom: 0;
-    width: 120px;
+    width: 150px;
 
 }
 
@@ -109,7 +109,7 @@
 }
 
 .sta-list__line li.comsemiexp {
-    right: 30%;
+    right: 25%;
     background-color: var(--comsemiexp)
 }
 
@@ -118,7 +118,7 @@
 }
 
 .sta-list__line li.semiexp {
-    right: 50%;
+    right: 40%;
     background-color: var(--semiexp)
 }
 
@@ -126,6 +126,14 @@
     border-color: var(--semiexp)
 }
 
+.sta-list__line li.comexp {
+    right: 55%;
+    background-color: var(--comexp)
+}
+
+.sta-list__line li.comexp span {
+    border-color: var(--comexp)
+}
 
 .sta-list__line li.exp {
     right: 70%;
@@ -136,7 +144,7 @@
     border-color: var(--exp)
 }
 .sta-list__line li.ltdexp {
-    right: 90%;
+    right: 85%;
     background-color: var(--ltdexp)
 }
 
