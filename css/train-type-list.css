@@ -4,7 +4,7 @@
     --loc: #aaa;
     --comsemiexp: #17b;
     --semiexp: #1b5;
-    --comexp: #ea1;
+    --secexp: #ea1;
     --exp: #e52;
     --liner: #1ae;
     --ltdexp: #e11;
@@ -65,8 +65,8 @@
     background-color: var(--semiexp);
 }
 
-.train-type__types .comexp {
-    background-color: var(--comexp);
+.train-type__types .secexp {
+    background-color: var(--secexp);
 }
 
 .train-type__types .exp {
